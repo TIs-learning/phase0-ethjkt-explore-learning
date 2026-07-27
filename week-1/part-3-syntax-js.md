@@ -102,6 +102,69 @@ for(let i = 0; i < 1000000; i++) {
 console.timeEnd("Loop");
 ```
 
+// Data Type
+```js
+// 1. Primitive Data Type: Menyimpan data secara langsung
+
+// String - untuk teks
+let nama = "Budi";
+let pesan = 'Halo';
+
+// Number - untuk angka (integer dan decimal)
+let umur = 25;
+let tinggi = 1.75;
+
+// Boolean - true/false
+let aktif = true;
+let menikah = false;
+
+// Undefined - variable yang belum diberi nilai
+let alamat;
+console.log(alamat); // undefined
+
+// Null - nilai kosong yang disengaja
+let dataSiswa = null;
+
+// Symbol - nilai unik dan immutable
+const id = Symbol('id');
+```
+
+// 2. reference types: referensi ke lokasi memori
+
+```js
+// Array - kumpulan data terurut
+let buah = ["Apel", "Jeruk", "Mangga"];
+
+// Object - kumpulan property dan value
+let siswa = {
+    nama: "Budi",
+    umur: 25,
+    aktif: true
+};
+
+// Function - blok kode yang bisa dipanggil
+function sapaan(nama) {
+    return `Halo ${nama}!`;
+}
+```
+
+// 1. Memeriksa tipe data: typeof()
+// 2. Type Conversion: String(), Number(), Boolean(), Automatic Conversion
+
+// Contoh Syntax
+```js
+length, Substring, toUpperCase, toLowerCase, indexOf
+```
+
+```js
+// Template literal memungkinkan ekspansi variabel dan multiple line
+let profil = `Nama: ${nama}
+Umur: ${umur} tahun`;
+```
+
+// Conditional Statement: if, else, else if, opeartor ternary, switch case deafult, 
+// Gerbang Logika: NAND, OR(||), XOR, AND (&&), NOT(!), NOR, NOR, XNOR
+
 
 
 
