@@ -1,0 +1,49 @@
+// ### 6. Logic Operator
+// 
+// Buat sistem login sederhana:
+// 
+// ```javascript
+// let username = "...";
+// let password = "...";
+// ```
+// 
+// Syarat login berhasil:
+// 
+// * Username benar **DAN**
+// * Password benar
+// 
+// Gunakan:
+// 
+// ```javascript
+// &&
+// ||
+// !
+// ```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const username = "Louis Immanuel";
+        const password = "SukaAyam@21.";
+
+        let user = prompt("Masukan Username: ")
+        let input_pass = prompt("Masukan Password: ")
+
+        if (user === username && input_pass === password) {
+            alert("Login Berhasil")
+        }
+        else if (user != username && input_pass != password){
+            alert("Credential Tidak Valid")
+        }
+        else if (user != username || input_pass != password ){
+            alert("Password atau Username Salah ")
+        }
+
+    </script>
+</body>
+</html>

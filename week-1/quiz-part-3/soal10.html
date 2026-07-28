@@ -1,0 +1,47 @@
+// ### 10. Console Group dan Timer
+// 
+// Buat simulasi proses login:
+// 
+// ```text
+// LOGIN PROCESS
+//   Username: ...
+//   Password: ...
+//   Status: ...
+// ```
+// 
+// Gunakan:
+// 
+// ```javascript
+// console.group()
+// console.groupEnd()
+// ```
+// 
+// Lalu ukur waktu proses menggunakan:
+// 
+// ```javascript
+// console.time()
+// console.timeEnd()
+// ```
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.time("Logging")
+        let dataUsername = prompt("Username: ")
+        let dataPassword = prompt("Password: ")
+        console.log(`Login Process`)
+        console.group("Detail Akun Mahasiswa")
+        console.log(`Username: ${dataUsername}`)
+        console.log(`Password: ${dataPassword}`)
+        console.log(`Status Sukses`)
+        console.groupEnd()
+        console.timeEnd("Logging")
+    </script>
+</body>
+</html>
